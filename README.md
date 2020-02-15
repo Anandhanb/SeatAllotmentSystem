@@ -9,10 +9,11 @@ Version:
 --------
 version : 2.0
 
-System Requirement
+System Requirement:
 -----------------
 OS: Windwos or Linus
 Language: Java 8.
+
 Constraints:
 -----------
 >> This prototype supports only 2 usescases out of the 6.
@@ -22,7 +23,7 @@ Constraints:
 >> Only JavaAPIs are used no restapi or GUI those will be added in later point of time.
 >> Uses simulater instead of DB data for prototyping purposes
 
-Input/Start
+Input/Start:
 -----------
 >> Run App.class inside sas folder to run the system.
 
