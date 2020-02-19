@@ -59,6 +59,31 @@ public class App {
 
 		System.out.println("********************Complete********************"
 				+ "\n");
+		
+		// UseCase 1
+				System.out
+						.println("UseCase 1: New/User without a seat claiming a vacant seat");
+				System.out
+						.println("---------------------------------------------------------");
+				Employee employee3 = userService.getAllEmployees().get(2);
+				Seat seat3 = seatAvailbilityService.getAllSeats().get(1);
+
+				seatAllocationService.changeSeat(employee3, seat3);
+
+				System.out.println("********************Complete********************"
+						+ "\n");
+
+				// UseCase 2
+				System.out.println("UseCase 2: Old user requesting a vacant seat.");
+				System.out.println("---------------------------------------------");
+				Employee employee4 = userService.getAllEmployees().get(9);
+				Seat seat4 = seatAvailbilityService.getAllSeats().get(8);
+
+				seatAllocationService.changeSeat(employee4, seat4);
+
+				System.out.println("********************Complete********************"
+						+ "\n");
+
 
 	}
 
