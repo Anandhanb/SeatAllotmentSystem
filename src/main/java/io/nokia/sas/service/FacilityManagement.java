@@ -61,7 +61,7 @@ public class FacilityManagement implements Observer{
 			publisher.notifyUpdate(new MigrationCompletedAndOccupied("Migration for user "+
 			userId+" to seat "+seatId+"completed all assets transfered", user, seat));		
 			
-//			publisher.detach((Employee) requestAccepted.getUser());
+			publisher.detach((Employee) requestAccepted.getUser());
 			
 		}
 		if(event instanceof SeatClaimedByNewUser){
